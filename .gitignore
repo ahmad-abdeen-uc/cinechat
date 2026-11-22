@@ -1,0 +1,55 @@
+# Virtual environments and Python caches
+/venv/
+/.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+*.egg-info/
+/build/
+/dist/
+
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+!.env.sample
+/.aws/
+/secrets/
+*.pem
+*.key
+
+# Downloaded models and caches
+.cache/
+/.huggingface/
+/model_cache/
+/hf_cache/
+
+# Local datasets and generated artifacts
+/archive (1).zip
+/data/raw/
+/data/processed/*.csv
+/data/processed/*.db
+/data/processed/*.db-*
+/data/vector_store/*.faiss
+/data/vector_store/*.faiss.tmp
+
+# Large local data (download per README)
+/data/
+
+# Videos, recordings and logs
+*.mov
+*.mp4
+*.webm
+*.log
+/_video_tmp/
+/_original_backup/
+record_demo*.py
+Record_Demo.command
+demo_log.json
+demo_page_text.txt
+.DS_Store
+Push_to_GitHub.command

@@ -1,0 +1,802 @@
+{
+  "summary": {
+    "mode": "full (LLM + rules)",
+    "app_dir": "/home/claude/work/app",
+    "intent_field_accuracy": 1.0,
+    "constraint_satisfaction": 1.0,
+    "relevance_at_5": 0.867,
+    "answer_rate": 0.966,
+    "requests": 30,
+    "total_seconds": 100.5
+  },
+  "cases": [
+    {
+      "id": 1,
+      "request": "I'm feeling sad. Suggest something funny and uplifting, but no horror.",
+      "status": "ok",
+      "fields": {
+        "genres_include": true,
+        "genres_exclude": true
+      },
+      "titles": [
+        "In a Heartbeat (2017)",
+        "The Bucket List (2007)",
+        "Inside Out (2015)",
+        "Someday This Pain Will Be Useful to You (2011)",
+        "Waiting to Exhale (1995)"
+      ],
+      "constraint": [
+        10,
+        10
+      ],
+      "relevance": [
+        0,
+        0
+      ],
+      "warnings": [],
+      "seconds": 3.62
+    },
+    {
+      "id": 2,
+      "request": "I don\u2019t want horror, just comedies",
+      "status": "ok",
+      "fields": {
+        "genres_include": true,
+        "genres_exclude": true
+      },
+      "titles": [
+        "Dilwale Dulhania Le Jayenge (1995)",
+        "Life Is Beautiful (1997)",
+        "Forrest Gump (1994)",
+        "The Intouchables (2011)",
+        "Back to the Future (1985)"
+      ],
+      "constraint": [
+        10,
+        10
+      ],
+      "relevance": [
+        0,
+        0
+      ],
+      "warnings": [],
+      "seconds": 2.46
+    },
+    {
+      "id": 3,
+      "request": "Recommend mind-bending movies like Inception.",
+      "status": "ok",
+      "fields": {
+        "intent": true,
+        "similar_to": true
+      },
+      "titles": [
+        "American Psycho (2000)",
+        "Total Recall (1990)",
+        "Unknown (2011)",
+        "Videodrome (1983)",
+        "A Scanner Darkly (2006)"
+      ],
+      "constraint": [
+        0,
+        0
+      ],
+      "relevance": [
+        2,
+        5
+      ],
+      "warnings": [
+        "Some matching catalog movies have no searchable embedding."
+      ],
+      "seconds": 3.55
+    },
+    {
+      "id": 4,
+      "request": "Show me the top five action movies based on audience ratings after 2010.",
+      "status": "ok",
+      "fields": {
+        "intent": true,
+        "genres_include": true,
+        "year_min": true
+      },
+      "titles": [
+        "Guardians of the Galaxy (2014)",
+        "Big Hero 6 (2014)",
+        "Rush (2013)",
+        "The Dark Knight Rises (2012)",
+        "Logan (2017)"
+      ],
+      "constraint": [
+        10,
+        10
+      ],
+      "relevance": [
+        0,
+        0
+      ],
+      "warnings": [],
+      "seconds": 5.52
+    },
+    {
+      "id": 5,
+      "request": "Suggest highly rated movies by Christopher Nolan.",
+      "status": "ok",
+      "fields": {
+        "director": true
+      },
+      "titles": [
+        "The Dark Knight (2008)",
+        "Inception (2010)",
+        "Interstellar (2014)",
+        "Memento (2000)",
+        "The Prestige (2006)"
+      ],
+      "constraint": [
+        5,
+        5
+      ],
+      "relevance": [
+        0,
+        0
+      ],
+      "warnings": [],
+      "seconds": 4.52
+    },
+    {
+      "id": 6,
+      "request": "christopher nolan movies",
+      "status": "ok",
+      "fields": {
+        "director": true
+      },
+      "titles": [
+        "The Dark Knight (2008)",
+        "Inception (2010)",
+        "Interstellar (2014)",
+        "Memento (2000)",
+        "The Prestige (2006)"
+      ],
+      "constraint": [
+        5,
+        5
+      ],
+      "relevance": [
+        0,
+        0
+      ],
+      "warnings": [],
+      "seconds": 3.65
+    },
+    {
+      "id": 7,
+      "request": "Tom Hanks movies",
+      "status": "ok",
+      "fields": {
+        "actor": true
+      },
+      "titles": [
+        "Forrest Gump (1994)",
+        "The Green Mile (1999)",
+        "Saving Private Ryan (1998)",
+        "Band of Brothers (2001)",
+        "Toy Story (1995)"
+      ],
+      "constraint": [
+        5,
+        5
+      ],
+      "relevance": [
+        0,
+        0
+      ],
+      "warnings": [],
+      "seconds": 3.19
+    },
+    {
+      "id": 8,
+      "request": "movies with Leonardo DiCaprio",
+      "status": "ok",
+      "fields": {
+        "actor": true
+      },
+      "titles": [
+        "Inception (2010)",
+        "The Wolf of Wall Street (2013)",
+        "The Departed (2006)",
+        "Django Unchained (2012)",
+        "Shutter Island (2010)"
+      ],
+      "constraint": [
+        5,
+        5
+      ],
+      "relevance": [
+        0,
+        0
+      ],
+      "warnings": [],
+      "seconds": 2.76
+    },
+    {
+      "id": 9,
+      "request": "Recommend science fiction movies about space exploration.",
+      "status": "ok",
+      "fields": {
+        "genres_include": true
+      },
+      "titles": [
+        "Gravity (2013)",
+        "Interstellar (2014)",
+        "The Space Between Us (2017)",
+        "Star Trek: The Motion Picture (1979)",
+        "Star Trek (2009)"
+      ],
+      "constraint": [
+        5,
+        5
+      ],
+      "relevance": [
+        5,
+        5
+      ],
+      "warnings": [],
+      "seconds": 2.34
+    },
+    {
+      "id": 10,
+      "request": "A good 90s thriller",
+      "status": "ok",
+      "fields": {
+        "genres_include": true,
+        "year_min": true,
+        "year_max": true
+      },
+      "titles": [
+        "Pulp Fiction (1994)",
+        "Leon: The Professional (1994)",
+        "Se7en (1995)",
+        "The Silence of the Lambs (1991)",
+        "Reservoir Dogs (1992)"
+      ],
+      "constraint": [
+        15,
+        15
+      ],
+      "relevance": [
+        0,
+        0
+      ],
+      "warnings": [],
+      "seconds": 3.51
+    },
+    {
+      "id": 11,
+      "request": "Korean thrillers from the 2000s",
+      "status": "ok",
+      "fields": {
+        "genres_include": true,
+        "year_min": true,
+        "year_max": true,
+        "language": true
+      },
+      "titles": [
+        "Oldboy (2003)",
+        "Memories of Murder (2003)",
+        "The Chaser (2008)",
+        "Sympathy for Lady Vengeance (2005)",
+        "Mother (2009)"
+      ],
+      "constraint": [
+        20,
+        20
+      ],
+      "relevance": [
+        0,
+        0
+      ],
+      "warnings": [],
+      "seconds": 2.85
+    },
+    {
+      "id": 12,
+      "request": "Funny movies without violence",
+      "status": "ok",
+      "fields": {
+        "genres_include": true,
+        "status": true
+      },
+      "titles": [
+        "The Hangover (2009)",
+        "The Seven Year Itch (1955)",
+        "The Full Monty (1997)",
+        "Internet Famous (2016)",
+        "Patch Adams (1998)"
+      ],
+      "constraint": [
+        10,
+        10
+      ],
+      "relevance": [
+        0,
+        0
+      ],
+      "warnings": [
+        "Theme exclusions use catalog keywords and cast, so they are best effort."
+      ],
+      "seconds": 2.36
+    },
+    {
+      "id": 13,
+      "request": "No gore please, a scary movie",
+      "status": "ok",
+      "fields": {
+        "status": true
+      },
+      "titles": [
+        "Monsters, Inc. (2001)",
+        "Zombieland (2009)",
+        "Monster House (2006)",
+        "Fear, Inc. (2016)",
+        "Razorback (1984)"
+      ],
+      "constraint": [
+        5,
+        5
+      ],
+      "relevance": [
+        0,
+        0
+      ],
+      "warnings": [
+        "Theme exclusions use catalog keywords and cast, so they are best effort.",
+        "Some matching catalog movies have no searchable embedding."
+      ],
+      "seconds": 3.97
+    },
+    {
+      "id": 14,
+      "request": "Fantasy or sci-fi, before 2015.",
+      "status": "ok",
+      "fields": {
+        "genres_include": true,
+        "genre_match": true,
+        "year_max": true
+      },
+      "titles": [
+        "Spirited Away (2001)",
+        "The Empire Strikes Back (1980)",
+        "The Green Mile (1999)",
+        "Inception (2010)",
+        "Interstellar (2014)"
+      ],
+      "constraint": [
+        10,
+        10
+      ],
+      "relevance": [
+        0,
+        0
+      ],
+      "warnings": [],
+      "seconds": 3.33
+    },
+    {
+      "id": 15,
+      "request": "A family movie for kids under 2 hours",
+      "status": "ok",
+      "fields": {
+        "genres_include": true,
+        "runtime_max": true
+      },
+      "titles": [
+        "Back to the Future (1985)",
+        "The Lion King (1994)",
+        "Inside Out (2015)",
+        "My Neighbor Totoro (1988)",
+        "Up (2009)"
+      ],
+      "constraint": [
+        10,
+        10
+      ],
+      "relevance": [
+        0,
+        0
+      ],
+      "warnings": [],
+      "seconds": 4.05
+    },
+    {
+      "id": 16,
+      "request": "Something like Interstaller",
+      "status": "ok",
+      "fields": {
+        "intent": true,
+        "status": true
+      },
+      "titles": [
+        "Prometheus (2012)",
+        "2001: A Space Odyssey (1968)",
+        "Close Encounters of the Third Kind (1977)",
+        "Life (2017)",
+        "Gattaca (1997)"
+      ],
+      "constraint": [
+        0,
+        0
+      ],
+      "relevance": [
+        3,
+        5
+      ],
+      "warnings": [
+        "I couldn't find 'Interstaller', so I used the closest title: Interstellar.",
+        "Some matching catalog movies have no searchable embedding."
+      ],
+      "seconds": 2.59
+    },
+    {
+      "id": 17,
+      "request": "movies like the dark knight",
+      "status": "ok",
+      "fields": {
+        "intent": true,
+        "status": true
+      },
+      "titles": [
+        "The Dark Knight Rises (2012)",
+        "Batman Begins (2005)",
+        "Batman (1989)",
+        "Batman: Year One (2011)",
+        "Batman Beyond: Return of the Joker (2000)"
+      ],
+      "constraint": [
+        0,
+        0
+      ],
+      "relevance": [
+        5,
+        5
+      ],
+      "warnings": [
+        "I used The Dark Knight (2008), the best-known film with that title. Add the release year if you meant another version.",
+        "Some matching catalog movies have no searchable embedding."
+      ],
+      "seconds": 2.77
+    },
+    {
+      "id": 18,
+      "request": "Movies like Titanic",
+      "status": "ok",
+      "fields": {
+        "intent": true,
+        "status": true
+      },
+      "titles": [
+        "Titanic (1996)",
+        "Titanic 2 (2010)",
+        "Titanic (1953)",
+        "A Night to Remember (1958)",
+        "Frozen (2013)"
+      ],
+      "constraint": [
+        0,
+        0
+      ],
+      "relevance": [
+        5,
+        5
+      ],
+      "warnings": [
+        "I used Titanic (1997), the best-known film with that title. Add the release year if you meant another version.",
+        "Some matching catalog movies have no searchable embedding."
+      ],
+      "seconds": 2.27
+    },
+    {
+      "id": 19,
+      "request": "Is it on Netflix? Recommend a comedy on Netflix",
+      "status": "unsupported",
+      "fields": {
+        "intent": true
+      },
+      "titles": [],
+      "constraint": [
+        0,
+        0
+      ],
+      "relevance": [
+        0,
+        0
+      ],
+      "warnings": [
+        "This request requires a capability outside the local movie catalog."
+      ],
+      "seconds": 3.51
+    },
+    {
+      "id": 20,
+      "request": "Funny movies but skip Groundhog Day.",
+      "status": "ok",
+      "fields": {
+        "genres_include": true,
+        "exclude_titles": true
+      },
+      "titles": [
+        "The Hangover (2009)",
+        "The Seven Year Itch (1955)",
+        "The Full Monty (1997)",
+        "Internet Famous (2016)",
+        "Patch Adams (1998)"
+      ],
+      "constraint": [
+        5,
+        5
+      ],
+      "relevance": [
+        0,
+        0
+      ],
+      "warnings": [],
+      "seconds": 6.43
+    },
+    {
+      "id": 21,
+      "request": "Top thrillers by audience ratings after 2018.",
+      "status": "no_results",
+      "fields": {
+        "intent": true,
+        "genres_include": true,
+        "year_min": true
+      },
+      "titles": [],
+      "constraint": [
+        0,
+        0
+      ],
+      "relevance": [
+        0,
+        0
+      ],
+      "warnings": [
+        "No catalog movies match all filters."
+      ],
+      "seconds": 3.76
+    },
+    {
+      "id": 22,
+      "request": "Animated movies about friendship",
+      "status": "ok",
+      "fields": {
+        "genres_include": true
+      },
+      "titles": [
+        "Mary and Max (2009)",
+        "When Marnie Was There (2014)",
+        "Regular Show: The Movie (2015)",
+        "For the Birds (2000)",
+        "The Fox and the Hound (1981)"
+      ],
+      "constraint": [
+        5,
+        5
+      ],
+      "relevance": [
+        4,
+        5
+      ],
+      "warnings": [],
+      "seconds": 2.28
+    },
+    {
+      "id": 23,
+      "request": "Clint Eastwood westerns",
+      "status": "ok",
+      "fields": {
+        "genres_include": true,
+        "person": true
+      },
+      "titles": [
+        "The Good, the Bad and the Ugly (1966)",
+        "For a Few Dollars More (1965)",
+        "Unforgiven (1992)",
+        "A Fistful of Dollars (1964)",
+        "The Outlaw Josey Wales (1976)"
+      ],
+      "constraint": [
+        10,
+        10
+      ],
+      "relevance": [
+        0,
+        0
+      ],
+      "warnings": [],
+      "seconds": 5.4
+    },
+    {
+      "id": 24,
+      "request": "late 80s action",
+      "status": "ok",
+      "fields": {
+        "genres_include": true,
+        "year_min": true,
+        "year_max": true
+      },
+      "titles": [
+        "Aliens (1986)",
+        "Indiana Jones and the Last Crusade (1989)",
+        "Castle in the Sky (1986)",
+        "Die Hard (1988)",
+        "Platoon (1986)"
+      ],
+      "constraint": [
+        15,
+        15
+      ],
+      "relevance": [
+        0,
+        0
+      ],
+      "warnings": [],
+      "seconds": 1.69
+    },
+    {
+      "id": 25,
+      "request": "Japanese animation from the 1990s",
+      "status": "ok",
+      "fields": {
+        "genres_include": true,
+        "year_min": true,
+        "year_max": true,
+        "language": true
+      },
+      "titles": [
+        "Princess Mononoke (1997)",
+        "Ghost in the Shell (1995)",
+        "Porco Rosso (1992)",
+        "Perfect Blue (1997)",
+        "Whisper of the Heart (1995)"
+      ],
+      "constraint": [
+        20,
+        20
+      ],
+      "relevance": [
+        0,
+        0
+      ],
+      "warnings": [],
+      "seconds": 2.64
+    },
+    {
+      "id": 26,
+      "request": "Romantic comedies starring Julia Roberts",
+      "status": "ok",
+      "fields": {
+        "genres_include": true,
+        "actor": true
+      },
+      "titles": [
+        "Pretty Woman (1990)",
+        "Notting Hill (1999)",
+        "Steel Magnolias (1989)",
+        "Confessions of a Dangerous Mind (2002)",
+        "Everyone Says I Love You (1996)"
+      ],
+      "constraint": [
+        10,
+        10
+      ],
+      "relevance": [
+        0,
+        0
+      ],
+      "warnings": [],
+      "seconds": 3.65
+    },
+    {
+      "id": 27,
+      "request": "Movies about artificial intelligence and robots",
+      "status": "ok",
+      "fields": {},
+      "titles": [
+        "Ex Machina (2015)",
+        "I, Robot (2004)",
+        "A.I. Artificial Intelligence (2001)",
+        "Chappie (2015)",
+        "Uncanny (2015)"
+      ],
+      "constraint": [
+        0,
+        0
+      ],
+      "relevance": [
+        5,
+        5
+      ],
+      "warnings": [
+        "Some matching catalog movies have no searchable embedding."
+      ],
+      "seconds": 2.38
+    },
+    {
+      "id": 28,
+      "request": "War movies about World War II",
+      "status": "ok",
+      "fields": {
+        "genres_include": true
+      },
+      "titles": [
+        "Company of Heroes (2013)",
+        "Generation War (2013)",
+        "Fury (2014)",
+        "Battleground (1949)",
+        "Schindler's List (1993)"
+      ],
+      "constraint": [
+        5,
+        5
+      ],
+      "relevance": [
+        5,
+        5
+      ],
+      "warnings": [],
+      "seconds": 2.37
+    },
+    {
+      "id": 29,
+      "request": "Something like Inception but funnier",
+      "status": "ok",
+      "fields": {
+        "intent": true,
+        "desired_tone": true
+      },
+      "titles": [
+        "Unknown (2011)",
+        "American Psycho (2000)",
+        "Identity (2003)",
+        "Cypher (2002)",
+        "Taxi Driver (1976)"
+      ],
+      "constraint": [
+        0,
+        0
+      ],
+      "relevance": [
+        0,
+        0
+      ],
+      "warnings": [
+        "Some matching catalog movies have no searchable embedding."
+      ],
+      "seconds": 4.41
+    },
+    {
+      "id": 30,
+      "request": "Documentaries about nature and animals",
+      "status": "ok",
+      "fields": {
+        "genres_include": true
+      },
+      "titles": [
+        "Life (2009)",
+        "Planet Earth II (2016)",
+        "Animals Are Beautiful People (1974)",
+        "Earthlings (2005)",
+        "One Life (2011)"
+      ],
+      "constraint": [
+        5,
+        5
+      ],
+      "relevance": [
+        5,
+        5
+      ],
+      "warnings": [],
+      "seconds": 2.69
+    }
+  ]
+}

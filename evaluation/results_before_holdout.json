@@ -1,0 +1,393 @@
+{
+  "summary": {
+    "mode": "full (LLM + rules)",
+    "app_dir": "/home/claude/work/orig",
+    "intent_field_accuracy": 0.583,
+    "constraint_satisfaction": 0.7,
+    "relevance_at_5": 0.6,
+    "answer_rate": 0.867,
+    "requests": 15,
+    "total_seconds": 51.5
+  },
+  "cases": [
+    {
+      "id": 101,
+      "request": "Something scary from the 70s",
+      "status": "ok",
+      "fields": {
+        "year_min": false,
+        "year_max": false
+      },
+      "titles": [
+        "Monsters, Inc. (2001)",
+        "Zombieland (2009)",
+        "Ghostbusters (1984)",
+        "The Sixth Sense (1999)",
+        "28 Days Later (2002)"
+      ],
+      "constraint": [
+        5,
+        10
+      ],
+      "relevance": [
+        0,
+        0
+      ],
+      "warnings": [
+        "Some matching catalog movies have no searchable embedding."
+      ],
+      "seconds": 3.06
+    },
+    {
+      "id": 102,
+      "request": "denzel washington movies",
+      "status": "ok",
+      "fields": {
+        "actor": false
+      },
+      "titles": [
+        "The Shawshank Redemption (1994)",
+        "The Godfather (1972)",
+        "Dilwale Dulhania Le Jayenge (1995)",
+        "The Dark Knight (2008)",
+        "Fight Club (1999)"
+      ],
+      "constraint": [
+        0,
+        5
+      ],
+      "relevance": [
+        0,
+        0
+      ],
+      "warnings": [],
+      "seconds": 4.73
+    },
+    {
+      "id": 103,
+      "request": "Films directed by Quentin Tarantino",
+      "status": "ok",
+      "fields": {
+        "director": true
+      },
+      "titles": [
+        "Pulp Fiction (1994)",
+        "Reservoir Dogs (1992)",
+        "Inglourious Basterds (2009)",
+        "Django Unchained (2012)",
+        "Kill Bill: Vol. 1 (2003)"
+      ],
+      "constraint": [
+        5,
+        5
+      ],
+      "relevance": [
+        0,
+        0
+      ],
+      "warnings": [],
+      "seconds": 5.21
+    },
+    {
+      "id": 104,
+      "request": "I\u2019d like a romance, but nothing sad",
+      "status": "ok",
+      "fields": {
+        "genres_include": true,
+        "status": true
+      },
+      "titles": [
+        "Her (2013)",
+        "Dilwale Dulhania Le Jayenge (1995)",
+        "Eternal Sunshine of the Spotless Mind (2004)",
+        "Forrest Gump (1994)",
+        "Your Name. (2016)"
+      ],
+      "constraint": [
+        5,
+        5
+      ],
+      "relevance": [
+        0,
+        0
+      ],
+      "warnings": [],
+      "seconds": 3.17
+    },
+    {
+      "id": 105,
+      "request": "Movies like The Matrix",
+      "status": "ok",
+      "fields": {
+        "intent": true,
+        "status": true
+      },
+      "titles": [
+        "The Matrix Revolutions (2003)",
+        "The Matrix Reloaded (2003)",
+        "Inception (2010)",
+        "Fight Club (1999)",
+        "The Animatrix (2003)"
+      ],
+      "constraint": [
+        0,
+        0
+      ],
+      "relevance": [
+        4,
+        5
+      ],
+      "warnings": [
+        "Some matching catalog movies have no searchable embedding."
+      ],
+      "seconds": 2.41
+    },
+    {
+      "id": 106,
+      "request": "French comedies",
+      "status": "ok",
+      "fields": {
+        "genres_include": true,
+        "language": true
+      },
+      "titles": [
+        "The Intouchables (2011)",
+        "Am\u00e9lie (2001)",
+        "Two Is a Family (2016)",
+        "The Dinner Game (1998)",
+        "Love Me If You Dare (2003)"
+      ],
+      "constraint": [
+        10,
+        10
+      ],
+      "relevance": [
+        0,
+        0
+      ],
+      "warnings": [],
+      "seconds": 2.1
+    },
+    {
+      "id": 107,
+      "request": "Steven Spielberg films from the 80s",
+      "status": "ok",
+      "fields": {
+        "director": true,
+        "year_min": false,
+        "year_max": false
+      },
+      "titles": [
+        "Schindler's List (1993)",
+        "Saving Private Ryan (1998)",
+        "Raiders of the Lost Ark (1981)",
+        "Catch Me If You Can (2002)",
+        "Jurassic Park (1993)"
+      ],
+      "constraint": [
+        11,
+        15
+      ],
+      "relevance": [
+        0,
+        0
+      ],
+      "warnings": [],
+      "seconds": 3.93
+    },
+    {
+      "id": 108,
+      "request": "Horror without zombies",
+      "status": "unsupported",
+      "fields": {
+        "genres_include": true,
+        "status": false
+      },
+      "titles": [],
+      "constraint": [
+        0,
+        0
+      ],
+      "relevance": [
+        0,
+        0
+      ],
+      "warnings": [
+        "The catalog cannot reliably enforce theme exclusions: zombies"
+      ],
+      "seconds": 3.54
+    },
+    {
+      "id": 109,
+      "request": "Movies about time travel",
+      "status": "ok",
+      "fields": {},
+      "titles": [
+        "About Time (2013)",
+        "Back to the Future (1985)",
+        "Timecrimes (2007)",
+        "Predestination (2014)",
+        "Back to the Future Part II (1989)"
+      ],
+      "constraint": [
+        0,
+        0
+      ],
+      "relevance": [
+        5,
+        5
+      ],
+      "warnings": [
+        "Some matching catalog movies have no searchable embedding."
+      ],
+      "seconds": 4.1
+    },
+    {
+      "id": 110,
+      "request": "Something like Jurasic Park",
+      "status": "clarify",
+      "fields": {
+        "intent": true,
+        "status": false
+      },
+      "titles": [],
+      "constraint": [
+        0,
+        0
+      ],
+      "relevance": [
+        0,
+        0
+      ],
+      "warnings": [],
+      "seconds": 2.5
+    },
+    {
+      "id": 111,
+      "request": "Meryl Streep dramas",
+      "status": "ok",
+      "fields": {
+        "genres_include": true,
+        "actor": false
+      },
+      "titles": [
+        "The Shawshank Redemption (1994)",
+        "The Godfather (1972)",
+        "Dilwale Dulhania Le Jayenge (1995)",
+        "The Dark Knight (2008)",
+        "Fight Club (1999)"
+      ],
+      "constraint": [
+        5,
+        10
+      ],
+      "relevance": [
+        0,
+        0
+      ],
+      "warnings": [],
+      "seconds": 4.87
+    },
+    {
+      "id": 112,
+      "request": "Westerns from the early 2000s",
+      "status": "ok",
+      "fields": {
+        "genres_include": true,
+        "year_min": false,
+        "year_max": false
+      },
+      "titles": [
+        "The Good, the Bad and the Ugly (1966)",
+        "Once Upon a Time in the West (1968)",
+        "Django Unchained (2012)",
+        "The Hateful Eight (2015)",
+        "For a Few Dollars More (1965)"
+      ],
+      "constraint": [
+        10,
+        15
+      ],
+      "relevance": [
+        0,
+        0
+      ],
+      "warnings": [],
+      "seconds": 2.65
+    },
+    {
+      "id": 113,
+      "request": "Kids movies about dogs",
+      "status": "ok",
+      "fields": {},
+      "titles": [
+        "Reservoir Dogs (1992)",
+        "The Fox and the Hound (1981)",
+        "The Secret Life of Pets (2016)",
+        "The Silence of the Lambs (1991)",
+        "One Hundred and One Dalmatians (1961)"
+      ],
+      "constraint": [
+        0,
+        0
+      ],
+      "relevance": [
+        3,
+        5
+      ],
+      "warnings": [
+        "Some matching catalog movies have no searchable embedding."
+      ],
+      "seconds": 3.2
+    },
+    {
+      "id": 114,
+      "request": "Top rated documentaries",
+      "status": "ok",
+      "fields": {
+        "intent": true,
+        "genres_include": true
+      },
+      "titles": [
+        "Citizenfour (2014)",
+        "Planet Earth (2006)",
+        "Blackfish (2013)",
+        "Senna (2010)",
+        "Searching for Sugar Man (2012)"
+      ],
+      "constraint": [
+        5,
+        5
+      ],
+      "relevance": [
+        0,
+        0
+      ],
+      "warnings": [],
+      "seconds": 3.05
+    },
+    {
+      "id": 115,
+      "request": "A heist movie",
+      "status": "ok",
+      "fields": {},
+      "titles": [
+        "The Shawshank Redemption (1994)",
+        "The Godfather (1972)",
+        "Dilwale Dulhania Le Jayenge (1995)",
+        "The Dark Knight (2008)",
+        "Fight Club (1999)"
+      ],
+      "constraint": [
+        0,
+        0
+      ],
+      "relevance": [
+        0,
+        5
+      ],
+      "warnings": [],
+      "seconds": 2.91
+    }
+  ]
+}

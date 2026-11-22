@@ -1,0 +1,19 @@
+[
+  {"id": 101, "request": "Something scary from the 70s", "expect": {"year_min": 1970, "year_max": 1979}},
+  {"id": 102, "request": "denzel washington movies", "expect": {"actor": "denzel washington"}},
+  {"id": 103, "request": "Films directed by Quentin Tarantino", "expect": {"director": "quentin tarantino"}},
+  {"id": 104, "request": "I’d like a romance, but nothing sad", "expect": {"genres_include": ["Romance"], "status": "ok"}},
+  {"id": 105, "request": "Movies like The Matrix", "expect": {"intent": "similar_movies", "status": "ok"},
+   "relevance": ["virtual reality", "simulation", "artificial intelligence", "hacker", "dystopia", "cyberpunk", "computer"]},
+  {"id": 106, "request": "French comedies", "expect": {"genres_include": ["Comedy"], "language": "fr"}},
+  {"id": 107, "request": "Steven Spielberg films from the 80s", "expect": {"director": "steven spielberg", "year_min": 1980, "year_max": 1989}},
+  {"id": 108, "request": "Horror without zombies", "expect": {"genres_include": ["Horror"], "status": "ok"}, "forbidden_keywords": ["zombie"]},
+  {"id": 109, "request": "Movies about time travel", "expect": {}, "relevance": ["time travel", "time machine", "time loop", "past", "future"]},
+  {"id": 110, "request": "Something like Jurasic Park", "expect": {"intent": "similar_movies", "status": "ok"},
+   "relevance": ["dinosaur", "island", "theme park", "genetic engineering", "monster"]},
+  {"id": 111, "request": "Meryl Streep dramas", "expect": {"genres_include": ["Drama"], "actor": "meryl streep"}},
+  {"id": 112, "request": "Westerns from the early 2000s", "expect": {"genres_include": ["Western"], "year_min": 2000, "year_max": 2003}},
+  {"id": 113, "request": "Kids movies about dogs", "expect": {}, "relevance": ["dog", "puppy", "pet"]},
+  {"id": 114, "request": "Top rated documentaries", "expect": {"intent": "top_rated", "genres_include": ["Documentary"]}},
+  {"id": 115, "request": "A heist movie", "expect": {}, "relevance": ["heist", "robbery", "bank robbery", "thief", "theft"]}
+]

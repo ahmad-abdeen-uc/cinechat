@@ -1,0 +1,410 @@
+{
+  "summary": {
+    "mode": "full (LLM + rules)",
+    "app_dir": "/home/claude/work/app",
+    "intent_field_accuracy": 1.0,
+    "constraint_satisfaction": 1.0,
+    "relevance_at_5": 0.96,
+    "answer_rate": 1.0,
+    "requests": 15,
+    "total_seconds": 51.0
+  },
+  "cases": [
+    {
+      "id": 101,
+      "request": "Something scary from the 70s",
+      "status": "ok",
+      "fields": {
+        "year_min": true,
+        "year_max": true
+      },
+      "titles": [
+        "Don't Be Afraid of the Dark (1973)",
+        "Eraserhead (1977)",
+        "Suspiria (1977)",
+        "Let's Scare Jessica to Death (1971)",
+        "Phantasm (1979)"
+      ],
+      "constraint": [
+        10,
+        10
+      ],
+      "relevance": [
+        0,
+        0
+      ],
+      "warnings": [
+        "Some matching catalog movies have no searchable embedding."
+      ],
+      "seconds": 3.03
+    },
+    {
+      "id": 102,
+      "request": "denzel washington movies",
+      "status": "ok",
+      "fields": {
+        "actor": true
+      },
+      "titles": [
+        "Philadelphia (1993)",
+        "American Gangster (2007)",
+        "Inside Man (2006)",
+        "Training Day (2001)",
+        "Man on Fire (2004)"
+      ],
+      "constraint": [
+        5,
+        5
+      ],
+      "relevance": [
+        0,
+        0
+      ],
+      "warnings": [],
+      "seconds": 4.63
+    },
+    {
+      "id": 103,
+      "request": "Films directed by Quentin Tarantino",
+      "status": "ok",
+      "fields": {
+        "director": true
+      },
+      "titles": [
+        "Pulp Fiction (1994)",
+        "Reservoir Dogs (1992)",
+        "Inglourious Basterds (2009)",
+        "Django Unchained (2012)",
+        "Kill Bill: Vol. 1 (2003)"
+      ],
+      "constraint": [
+        5,
+        5
+      ],
+      "relevance": [
+        0,
+        0
+      ],
+      "warnings": [],
+      "seconds": 5.2
+    },
+    {
+      "id": 104,
+      "request": "I\u2019d like a romance, but nothing sad",
+      "status": "ok",
+      "fields": {
+        "genres_include": true,
+        "status": true
+      },
+      "titles": [
+        "Alice Doesn't Live Here Anymore (1974)",
+        "Moscow Does Not Believe in Tears (1980)",
+        "Wish You Were Here (2012)",
+        "P.S. I Love You (2007)",
+        "Hope Floats (1998)"
+      ],
+      "constraint": [
+        5,
+        5
+      ],
+      "relevance": [
+        0,
+        0
+      ],
+      "warnings": [],
+      "seconds": 2.9
+    },
+    {
+      "id": 105,
+      "request": "Movies like The Matrix",
+      "status": "ok",
+      "fields": {
+        "intent": true,
+        "status": true
+      },
+      "titles": [
+        "The Matrix Revolutions (2003)",
+        "The Matrix Reloaded (2003)",
+        "The Animatrix (2003)",
+        "Hackers (1995)",
+        "eXistenZ (1999)"
+      ],
+      "constraint": [
+        0,
+        0
+      ],
+      "relevance": [
+        5,
+        5
+      ],
+      "warnings": [
+        "Some matching catalog movies have no searchable embedding."
+      ],
+      "seconds": 2.37
+    },
+    {
+      "id": 106,
+      "request": "French comedies",
+      "status": "ok",
+      "fields": {
+        "genres_include": true,
+        "language": true
+      },
+      "titles": [
+        "The Intouchables (2011)",
+        "Am\u00e9lie (2001)",
+        "Two Is a Family (2016)",
+        "The Dinner Game (1998)",
+        "Love Me If You Dare (2003)"
+      ],
+      "constraint": [
+        10,
+        10
+      ],
+      "relevance": [
+        0,
+        0
+      ],
+      "warnings": [],
+      "seconds": 2.06
+    },
+    {
+      "id": 107,
+      "request": "Steven Spielberg films from the 80s",
+      "status": "ok",
+      "fields": {
+        "director": true,
+        "year_min": true,
+        "year_max": true
+      },
+      "titles": [
+        "Raiders of the Lost Ark (1981)",
+        "Indiana Jones and the Last Crusade (1989)",
+        "E.T. the Extra-Terrestrial (1982)",
+        "The Color Purple (1985)",
+        "Indiana Jones and the Temple of Doom (1984)"
+      ],
+      "constraint": [
+        15,
+        15
+      ],
+      "relevance": [
+        0,
+        0
+      ],
+      "warnings": [],
+      "seconds": 3.79
+    },
+    {
+      "id": 108,
+      "request": "Horror without zombies",
+      "status": "ok",
+      "fields": {
+        "genres_include": true,
+        "status": true
+      },
+      "titles": [
+        "Psycho (1960)",
+        "The Shining (1980)",
+        "Alien (1979)",
+        "The Thing (1982)",
+        "Aliens (1986)"
+      ],
+      "constraint": [
+        10,
+        10
+      ],
+      "relevance": [
+        0,
+        0
+      ],
+      "warnings": [
+        "Theme exclusions use catalog keywords and cast, so they are best effort."
+      ],
+      "seconds": 3.56
+    },
+    {
+      "id": 109,
+      "request": "Movies about time travel",
+      "status": "ok",
+      "fields": {},
+      "titles": [
+        "About Time (2013)",
+        "Timecrimes (2007)",
+        "Back to the Future (1985)",
+        "The Time Machine (1960)",
+        "Predestination (2014)"
+      ],
+      "constraint": [
+        0,
+        0
+      ],
+      "relevance": [
+        5,
+        5
+      ],
+      "warnings": [
+        "Some matching catalog movies have no searchable embedding."
+      ],
+      "seconds": 4.32
+    },
+    {
+      "id": 110,
+      "request": "Something like Jurasic Park",
+      "status": "ok",
+      "fields": {
+        "intent": true,
+        "status": true
+      },
+      "titles": [
+        "Jurassic World (2015)",
+        "The Land Before Time (1988)",
+        "Jurassic Park III (2001)",
+        "The Lost World: Jurassic Park (1997)",
+        "The Good Dinosaur (2015)"
+      ],
+      "constraint": [
+        0,
+        0
+      ],
+      "relevance": [
+        5,
+        5
+      ],
+      "warnings": [
+        "I couldn't find 'Jurasic Park', so I used the closest title: Jurassic Park.",
+        "Some matching catalog movies have no searchable embedding."
+      ],
+      "seconds": 2.54
+    },
+    {
+      "id": 111,
+      "request": "Meryl Streep dramas",
+      "status": "ok",
+      "fields": {
+        "genres_include": true,
+        "actor": true
+      },
+      "titles": [
+        "The Deer Hunter (1978)",
+        "Manhattan (1979)",
+        "Kramer vs. Kramer (1979)",
+        "Adaptation. (2002)",
+        "The Devil Wears Prada (2006)"
+      ],
+      "constraint": [
+        10,
+        10
+      ],
+      "relevance": [
+        0,
+        0
+      ],
+      "warnings": [],
+      "seconds": 4.4
+    },
+    {
+      "id": 112,
+      "request": "Westerns from the early 2000s",
+      "status": "ok",
+      "fields": {
+        "genres_include": true,
+        "year_min": true,
+        "year_max": true
+      },
+      "titles": [
+        "Spirit: Stallion of the Cimarron (2002)",
+        "Open Range (2003)",
+        "Manitou's Shoe (2001)",
+        "The Tracker (2002)",
+        "King of Texas (2002)"
+      ],
+      "constraint": [
+        15,
+        15
+      ],
+      "relevance": [
+        0,
+        0
+      ],
+      "warnings": [],
+      "seconds": 2.58
+    },
+    {
+      "id": 113,
+      "request": "Kids movies about dogs",
+      "status": "ok",
+      "fields": {},
+      "titles": [
+        "The Fox and the Hound (1981)",
+        "The Fox and the Hound 2 (2006)",
+        "Red (2008)",
+        "The Shaggy Dog (1959)",
+        "A Boy and His Dog (1975)"
+      ],
+      "constraint": [
+        0,
+        0
+      ],
+      "relevance": [
+        5,
+        5
+      ],
+      "warnings": [
+        "Some matching catalog movies have no searchable embedding."
+      ],
+      "seconds": 3.27
+    },
+    {
+      "id": 114,
+      "request": "Top rated documentaries",
+      "status": "ok",
+      "fields": {
+        "intent": true,
+        "genres_include": true
+      },
+      "titles": [
+        "Citizenfour (2014)",
+        "Planet Earth (2006)",
+        "Blackfish (2013)",
+        "Senna (2010)",
+        "Searching for Sugar Man (2012)"
+      ],
+      "constraint": [
+        5,
+        5
+      ],
+      "relevance": [
+        0,
+        0
+      ],
+      "warnings": [],
+      "seconds": 3.03
+    },
+    {
+      "id": 115,
+      "request": "A heist movie",
+      "status": "ok",
+      "fields": {},
+      "titles": [
+        "The Last Heist (2016)",
+        "Coin Heist (2017)",
+        "The Maiden Heist (2009)",
+        "Family Heist (2017)",
+        "Trance (2013)"
+      ],
+      "constraint": [
+        0,
+        0
+      ],
+      "relevance": [
+        4,
+        5
+      ],
+      "warnings": [
+        "Some matching catalog movies have no searchable embedding."
+      ],
+      "seconds": 3.31
+    }
+  ]
+}
